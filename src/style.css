@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .prose {
+    .footnotes {
+      p,
+      ol,
+      li {
+        @apply my-0;
+      }
+      @apply flex flex-col gap-2 my-5 last:mb-0;
+    }
+  }
+}

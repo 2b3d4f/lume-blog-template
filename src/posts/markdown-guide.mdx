@@ -1,0 +1,123 @@
+---
+title: Markdown Guide
+date: 2024-01-01T00:00:00+09:00
+tags:
+  - markdown
+---
+
+This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+
+## Headings
+
+The following HTML `<h1>` through `<h6>` elements represent six levels of section headings. `<h1>` is the highest section level and `<h6>` is the lowest.
+
+# h1
+
+## h2
+
+### h3
+
+#### h4
+
+##### h5
+
+###### h6
+
+## Paragraphs
+
+Deserunt aute qui nisi consequat aliquip anim do. Et proident non sunt ea qui adipisicing laboris nostrud aute fugiat esse culpa consequat laboris. Ullamco cillum aliqua consectetur minim Lorem velit ut velit. Ad consectetur commodo ex et fugiat officia ex ullamco excepteur adipisicing laboris ut veniam eu. Ut commodo et nulla est pariatur veniam do est laborum qui exercitation ipsum. Deserunt sunt mollit deserunt labore Lorem amet esse ad reprehenderit velit excepteur.
+
+Veniam veniam officia deserunt qui ex ex. Incididunt sunt dolor non nostrud enim fugiat in aliqua anim veniam adipisicing velit. Ea et dolor incididunt sit aliquip minim nostrud exercitation. Cillum veniam dolore Lorem aliquip exercitation quis irure ex ea et fugiat excepteur ea. Nulla sunt quis amet tempor ex dolor laborum in est proident nulla aliquip exercitation. Incididunt ut mollit eu adipisicing exercitation dolore Lorem eu exercitation veniam ullamco. Deserunt eiusmod deserunt aliqua Lorem fugiat aliquip esse minim.
+
+Quis officia enim culpa magna eu eu do pariatur deserunt cillum ullamco culpa officia id. Sunt anim labore reprehenderit anim id exercitation dolor nostrud ut. Duis cillum dolore irure anim laboris Lorem. Occaecat enim occaecat labore duis deserunt enim exercitation in laboris cillum occaecat.
+
+## Blockquotes
+
+> Tiam, ad mint andaepu dandae nostion secatur sequo quae. **Note** that you can use _Markdown syntax_ within a `blockquote`.
+
+> Don't communicate by sharing memory, share memory by communicating.<br/>
+> — <cite>Rob Pike[^1]</cite>
+
+[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+
+## Tables
+
+Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
+
+| Name  | Age |
+| ----- | --- |
+| Bob   | 27  |
+| Alice | 23  |
+
+### Inline Markdown within tables
+
+| Italics   | Bold     | Code   |
+| --------- | -------- | ------ |
+| _italics_ | **bold** | `code` |
+
+## Code Blocks
+
+### Code block with backticks
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Example HTML5 Document</title>
+  </head>
+  <body>
+    <p>Test</p>
+  </body>
+</html>
+```
+
+### Diff code block
+
+```diff
+[dependencies.bevy]
+git = "https://github.com/bevyengine/bevy"
+rev = "11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13"
+- features = ["dynamic"]
++ features = ["jpeg", "dynamic"]
+```
+
+## List Types
+
+### Ordered List
+
+1. First item
+2. Second item
+3. Third item
+
+### Unordered List
+
+- List item
+- Another item
+- And another item
+
+### Nested list
+
+- Fruit
+  - Apple
+  - Orange
+  - Banana
+- Dairy
+  - Milk
+  - Cheese
+
+## Other Elements — abbr, sub, sup, kbd, mark
+
+<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+
+H<sub>2</sub>O
+
+X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
+
+Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
+
+Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
+## Hyperlinked image
+
+[![Google](https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png)](https://google.com)
