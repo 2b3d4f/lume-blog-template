@@ -1,12 +1,12 @@
 layout: layouts/single.tsx
-lang: ja
-copyright: 2b3d4f
+lang: en
+copyright: Glob
 
 metas:
-  site: 2b3d4f's Blog
-  description: "2b3d4f's Blog"
+  site: Glob's Blog
+  description: "Glob's Blog"
   title: "=title || $ h1"
   image: "=image"
-  twitter: "@t2b3d4f"
+  twitter: "@"
   lang: "=lang"
   generator: true
