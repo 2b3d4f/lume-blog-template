@@ -13,6 +13,7 @@ export default (data: Lume.Data) => {
             content="width=device-width, initial-scale=1.0"
           />
           <title>{title}</title>
+          <link rel="stylesheet" href="/prism.css" />
           <link rel="stylesheet" href="/style.css" />
         </head>
         <body>
