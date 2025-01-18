@@ -8,7 +8,8 @@ import basePath from "lume/plugins/base_path.ts";
 
 const site = lume({
   src: "src",
-  location: new URL("https://example.com"),
+  // Change this to your site URL
+  location: new URL("https://2b3d4f.github.io/lume-blog-template"),
 });
 
 site.use(metas());
