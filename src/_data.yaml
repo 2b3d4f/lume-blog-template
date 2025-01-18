@@ -1,0 +1,8 @@
+layout: layouts/single.tsx
+lang: en
+
+metas:
+  site: "My Site"
+  title: "=title"
+  lang: "=lang"
+  generator: true
