@@ -1,5 +1,3 @@
-import Searcher from "lume/core/searcher.ts";
-
 export const layout = "layouts/base.tsx";
 
 interface TagProps extends Lume.Data {
