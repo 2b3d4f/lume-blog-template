@@ -1,6 +1,12 @@
 layout: layouts/single.tsx
 lang: en
 
+tagDescs:
+  red: "Red is the color of fire."
+  blue: "Blue is the color of the sky."
+  green: "Green is the color of nature."
+  markdown: "Markdown is a lightweight markup language."
+
 metas:
   site: "My Site"
   title: "=title"
