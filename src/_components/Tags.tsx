@@ -16,11 +16,15 @@ export default ({ search }: PagesProps, helpers: Lume.Helpers) => {
             <a href={tag.url}>{tag.title}</a>
             <br />
             {total} {total === 1 ? "entry" : "entries"}
-            <br />
-            Last modified:{" "}
-            <time dateTime={helpers.date(lastMod.toISOString(), "ATOM")}>
-              {helpers.date(lastMod.toISOString(), "yyyy-MM-dd")}
-            </time>
+            {lastMod && (
+              <>
+                <br />
+                Last modified:{" "}
+                <time dateTime={helpers.date(lastMod.toISOString(), "ATOM")}>
+                  {helpers.date(lastMod.toISOString(), "yyyy-MM-dd")}
+                </time>
+              </>
+            )}
           </li>
         );
       })}
