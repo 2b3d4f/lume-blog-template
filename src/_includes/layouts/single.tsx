@@ -1,8 +1,6 @@
-import Searcher from "lume/core/searcher.ts";
-
 export const layout = "layouts/base.tsx";
 
-export default (data: Lume.Data, search: Searcher) => {
+export default (data: Lume.Data) => {
   return (
     <>
       {data.title ? <h1>{data.title}</h1> : null}
