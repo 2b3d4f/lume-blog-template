@@ -26,6 +26,8 @@ jobs:
         uses: denoland/setup-deno@v2
 
       - name: Build site
+        env:
+          TZ: 'Asia/Tokyo'
         run: deno task build
 
       - name: Setup Pages
