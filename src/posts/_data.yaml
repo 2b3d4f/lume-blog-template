@@ -1,1 +1,2 @@
 type: post
+templateEngine: [mdx, md]
