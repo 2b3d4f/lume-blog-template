@@ -1,8 +1,7 @@
 export const layout = "layouts/tag.tsx";
 
-export default function* ({search}: Lume.Data) {
-
-  for ( const tag of search.values("tags")) {
+export default function* ({ search }: Lume.Data) {
+  for (const tag of search.values("tags")) {
     const lastMod = search.page(`type=post ${tag}`, "date=desc");
     yield {
       url: `/tags/${tag}/`,
@@ -10,7 +9,7 @@ export default function* ({search}: Lume.Data) {
       type: "tag",
       query: `type=post ${tag}`,
       lastMod: lastMod?.date,
-      tag
-    }
+      tag,
+    };
   }
 }
