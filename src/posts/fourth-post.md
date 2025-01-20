@@ -2,7 +2,7 @@
 title: Fourth Post
 date: 2025-01-03T00:00:00+09:00
 tags:
-  - Red
+  - red
 ---
 
 ## Velit officia ipsum velit culpa nisi elit sint
