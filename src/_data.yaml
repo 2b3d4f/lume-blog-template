@@ -9,6 +9,6 @@ tagDescs:
 
 metas:
   site: "My Site"
-  title: "=title"
+  title: "=title || $ h1"
   lang: "=lang"
   generator: true
